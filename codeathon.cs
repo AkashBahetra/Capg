@@ -53,6 +53,6 @@ class Product{
 	}
 	
 	public string getProductDetails(){
-		return "Code-"+categoryCode+",Name-"+productName+",Price-"+Convert.ToString(productPrice)+"Category-"+Convert.ToString(categoryCode);
+		return "Code-"+productCode+",Name-"+productName+",Price-"+Convert.ToString(productPrice)+"Category-"+Convert.ToString(categoryCode);
 	}
 }
