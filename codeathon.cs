@@ -1,3 +1,6 @@
+using System.IO;
+using System;
+
 class Product{
 	private string productCode;
 	private string productName;
@@ -45,11 +48,11 @@ class Product{
 	public Product(string productName, double productPrice){
 		this.productName = productName;
 		this.productPrice = productPrice;
-		this.categoryCode = categoryCode;
 		productCode = generateProductCode();
-		CategoryCode = "E";
+		CategoryCode = 'E';
 	}
 	
 	public string getProductDetails(){
 		return "Code-"+categoryCode+",Name-"+productName+",Price-"+Convert.ToString(productPrice)+"Category-"+Convert.ToString(categoryCode);
 	}
+}
